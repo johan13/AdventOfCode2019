@@ -1,0 +1,139 @@
+rules:
+    adjacent-overload-signatures: true
+    array-type:
+        options: array-simple
+    arrow-parens:
+        options: ban-single-arg-parens
+    arrow-return-shorthand: true
+    await-promise: true
+    ban:
+        options:
+            - { name: ["describe", "only"], message: "Don't forget to remove 'only' before committing." }
+            - { name: ["it", "only"], message: "Don't forget to remove 'only' before committing." }
+    ban-comma-operator: true
+    ban-types:
+        options:
+        - [Boolean, "Avoid using the `Boolean` type. Did you mean `boolean`?"]
+        - [Function, "Avoid using the `Function` type. Prefer a specific function type, like `() => void`."]
+        - [Number, "Avoid using the `Number` type. Did you mean `number`?"]
+        - [Object, "Avoid using the `Object` type. Did you mean `object`?"]
+        - [String, "Avoid using the `String` type. Did you mean `string`?"]
+        - [Symbol, "Avoid using the `Symbol` type. Did you mean `symbol`?"]
+    callable-types: true
+    class-name: true
+    curly: true
+    deprecation: true
+    encoding: true
+    file-name-casing: [true, camel-case]
+    forin: true
+    function-constructor: true
+    interface-name:
+        options: always-prefix
+    jsdoc-format:
+        options: check-multiline-start
+    label-position: true
+    member-access:
+        options: [check-accessor, check-constructor, check-parameter-property]
+    member-ordering:
+        options: { order: fields-first }
+    new-parens: true
+    no-angle-bracket-type-assertion: true
+    no-any: true
+    no-arg: true
+    no-async-without-await: true
+    no-boolean-literal-compare: true
+    no-conditional-assignment: true
+    no-consecutive-blank-lines: true
+    no-console: true
+    no-construct: true
+    no-debugger: true
+    no-default-export: true
+    no-duplicate-imports:
+        options: { allow-namespace-imports: true }
+    no-duplicate-super: true
+    no-duplicate-switch-case: true
+    no-dynamic-delete: true
+    no-empty-interface: true
+    no-eval: true
+    no-floating-promises: true
+    no-for-in-array: true
+    no-implicit-dependencies: true
+    no-import-side-effect: true
+    no-inferrable-types:
+        options: [ignore-params, ignore-properties]
+    no-inferred-empty-object-type: true
+    no-internal-module: true
+    no-invalid-template-strings: true
+    no-irregular-whitespace: true
+    no-misused-new: true
+    no-namespace: true
+    no-object-literal-type-assertion: true
+    no-redundant-jsdoc: true
+    no-reference: true
+    no-return-await: true
+    no-shadowed-variable:
+        options: { temporalDeadZone: false }
+    no-string-throw: true
+    no-switch-case-fall-through: true
+    no-tautology-expression: true
+    no-trailing-whitespace: true
+    no-unbound-method:
+        options: { allow-delete: true, allow-typeof: true, ignore-static: true }
+    no-unnecessary-callback-wrapper: true
+    no-unnecessary-class: true
+    no-unnecessary-initializer: true
+    no-unnecessary-qualifier: true
+    no-unnecessary-type-assertion: true
+    no-unsafe-any: true
+    no-unsafe-finally: true
+    no-unused-expression:
+        options: allow-fast-null-checks
+    no-var-keyword: true
+    no-var-requires: true
+    no-void-expression:
+        options: ignore-arrow-function-shorthand
+    object-literal-key-quotes:
+        options: consistent-as-needed
+    object-literal-shorthand: true
+    one-line:
+        options: [check-catch, check-else, check-finally, check-open-brace, check-whitespace]
+    one-variable-per-declaration:
+        options: ignore-for-loop
+    only-arrow-functions:
+        options: allow-named-functions
+    ordered-imports:
+        options:
+            import-sources-order: case-insensitive
+            module-source-path: full
+            named-imports-order: case-insensitive
+    prefer-const:
+        options: { destructuring: all }
+    prefer-for-of: true
+    prefer-object-spread: true
+    prefer-readonly: true
+    prefer-switch: true
+    prefer-template:
+        options: allow-single-concat
+    prefer-while: true
+    promise-function-async: true
+    quotemark:
+        options: double
+    radix: true
+    return-undefined: true
+    semicolon:
+        options: always
+    static-this: true
+    strict-type-predicates: true
+    switch-default: true
+    switch-final-break:
+        options: always
+    trailing-comma:
+        options: { multiline: always, singleline: never }
+    triple-equals: true
+    unified-signatures: true
+    unnecessary-bind: true
+    unnecessary-constructor: true
+    use-default-type-parameter: true
+    use-isnan: true
+    variable-name:
+        options: [allow-leading-underscore, ban-keywords, check-format, require-const-for-all-caps]

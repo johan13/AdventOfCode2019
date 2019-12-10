@@ -1,7 +1,7 @@
 import { readAndParse } from "../util/readAndParse";
 
 export async function part1and2(input: number) {
-    const program = await loadProgram();
+    const program = await loadProgram("day05/input.txt");
     const output = runProgram(program, [input]);
     if (output.slice(0, -1).some(x => x !== 0)) {
         throw new Error("Diagnostics failed");
@@ -9,9 +9,9 @@ export async function part1and2(input: number) {
     return output[output.length - 1];
 }
 
-async function loadProgram() {
+export async function loadProgram(file: string) {
     return readAndParse({
-        file: "day05/input.txt",
+        file,
         separator: ",",
         parser: x => parseInt(x, 10),
     });
